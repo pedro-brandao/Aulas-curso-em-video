@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <h1>Qual o seu País?</h1>
+    Insira o nome do seu país de origem: <input type="name" name="caixatxt1" id="caixatxt1">
+    <input type="button" value="verificar" id = "botao" onclick="Pesquisa()">
+    <div id = "res"></div>
+</head>
+    <style>
+        input#caixatxt1{
+            height: 15px;
+            width: 80px;
+            background-color: rgb(206, 206, 206);
+        }
+    </style>
+<body>
+   <script>
+       
+       function Pesquisa(){
+       var nome = window.document.getElementById("caixatxt1")
+       var res = window.document.getElementById("res")
+       var val = nome.value
+                res.innerHTML = `O seu país de origem é ${val}` //estapropriedade "res" só serve para escrever na tela.
+        if (val == 'brasil'){
+            res.innerHTML += "<br>Você é BRASILEIRO!, Vamos ser gentis e dar boas vindas aos nossos estrangeiros!</br>"
+        } else {
+            res.innerHTML += "<br>Você é estrangeiro! Seja bem vindo ao Brasil ;)</br>"
+        }
+
+       }
+   </script> 
+</body>
+</html>

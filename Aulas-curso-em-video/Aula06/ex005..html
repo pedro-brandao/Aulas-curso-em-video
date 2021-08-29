@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Aprendizado</title>
+</head>
+    <h1>O meu titulo de DOM </h1> <!-- h1 serve para titulos em html -->
+    <p>Aqui vai o resultado.</p> <!-- p serve para paragrafos -->
+    <p id = "parag" >aprendendo a progrmar <strong>Document Object Model</strong> </p>
+    <div>Clique em mim</div> <!-- div serve para  -->
+
+<body>
+    <style> 
+        body { 
+        background-color:rgb(107, 77, 155);
+        color:rgb(24, 24, 24);
+        font:normal 18pt arial;
+      }
+    </style>
+<script>
+var p1 = window.document.getElementById("parag")
+    p1.style.color = "cyan"  //21:43 da aula 9
+        window.document.write(p1.innerHTML.toUpperCase())
+    p1.style.background = "blue"
+  
+
+
+       
+    </script>
+</body>
+</html>

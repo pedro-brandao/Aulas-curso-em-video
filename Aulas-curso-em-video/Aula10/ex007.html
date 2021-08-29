@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+</head>
+<style>
+    input {
+        font: normal 18pt arial;
+        width: 100px
+    }
+    div#res{
+        margin-top: 15px
+    }
+    div#area {
+        font:normal;
+        color: white;
+        background-color: dimgray;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        text-align:center;
+           }
+</style>
+<body>
+    <h1><strong>Somando Valores</strong></h1>
+    <input type = "number" name = "txtn1" id = "txtn1"> +
+    <input type = "number" name="txtn2" id="txtn2">
+    <input type = "button" value = "Somar" onclick = "somar()">
+    <div id = "res">Resultado:</div>
+    <div id = "area">Meu resultado</div>
+<script>
+        function somar(){
+            var Mr = window.document.getElementById('area')
+            var res = window.document.getElementById("res")
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById("txtn2")           
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+           Mr.innerHTML = `<strong> ${s} </strong>`
+            res.innerHTML = `a soma ente ${n1} e ${n2} é ${s}`
+        }
+    </script>
+</body>
+</html>
